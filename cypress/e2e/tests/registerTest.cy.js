@@ -13,5 +13,6 @@ describe('resgister test', () => {
         register.enterConfirmPassword(registerData.confirmPassword);
         register.clickPrivacyPolicy();
         register.clickContinueButton();
+        register.verifyRegistrationSuccess(registerData.successMessage);
     });
      })

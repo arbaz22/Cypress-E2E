@@ -1,9 +1,10 @@
 {
     "firstName": "John",
     "lastName": "Doe",
-    "email": "john.doe11@gmail.com",
+    "email": "john.doe22257@gmail.com",
     "telephone": "1234567890",
     "password": "Cypress123!!",
-    "confirmPassword": "Cypress123!!"
+    "confirmPassword": "Cypress123!!",
+    "successMessage": "Your Account Has Been Created!"
 
 }

@@ -8,7 +8,8 @@ export class registerPage {
     confirmPassword: "#input-confirm",
     privacyPolicy: 'input[type="checkbox"]',
     continueButton: 'input[type="submit"]',
-  };
+    successMessage: "h1"
+    }
 OpenURL() {
     cy.env(["URL"]).then((env) => {
         cy.visit(env.URL);
@@ -44,5 +45,9 @@ OpenURL() {
 
   clickContinueButton() {
     cy.get(this.weblocators.continueButton).click();
+  }
+
+  verifyRegistrationSuccess(successMessage) {
+    cy.get(this.weblocators.successMessage).should("contain.text", successMessage);
   }
 }
